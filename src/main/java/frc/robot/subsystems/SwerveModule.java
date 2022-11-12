@@ -31,7 +31,7 @@ public class SwerveModule {
         mRotorEncoder.configSensorInitializationStrategy(SensorInitializationStrategy.BootToAbsolutePosition);
 
         mRotor.setInverted(TalonFXInvertType.Clockwise);
-        mThrottle.setInverted(TalonFXInvertType.Clockwise);
+        mThrottle.setInverted(TR);
         
         mRotor.configVoltageCompSaturation(Constants.kVoltageCompensation);
         mThrottle.configVoltageCompSaturation(Constants.kVoltageCompensation);
@@ -42,5 +42,4 @@ public class SwerveModule {
         mRotor.setNeutralMode(NeutralMode.Brake);
         mThrottle.setNeutralMode(NeutralMode.Brake);
     }
-
 }
