@@ -41,8 +41,6 @@ public class SwerveModule {
 
         mRotor.setNeutralMode(NeutralMode.Brake);
         mThrottle.setNeutralMode(NeutralMode.Brake);
-
     }
-
 
 }
